@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rishabh Mishra Portfolio</title>
+    <title>Muhammad Talha  Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -78,6 +78,29 @@
   background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
+#prof_img{
+	width: 100%;
+	/* height: %; */
+	border-radius: 10%;
+	/* margin-left: 100%; */
+}
+/* back to top */
+.back-to-top {
+  background-color:#ffbd39; /* Yellow color */
+  color: #000; /* Black text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.back-to-top:hover {
+  background-color: #ffbd39; /* Slightly darker yellow on hover */
+}
+
 
 @keyframes typing {
   from {
@@ -109,12 +132,79 @@
   transform: scale(1.1);
 }
 
+/* line animation */
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.animation-line {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 20px;
+}
+
+.animation-line p {
+  display: inline-block;
+  font-size: 55px; /* Increased font size */
+  color: transparent; /* Make text transparent to show the hollow effect */
+  -webkit-text-stroke: 2px #fff; /* White border (hollow effect) */
+  text-stroke: 1px #e7e1e1; /* For browsers that support text-stroke */
+  animation: scroll 25s linear infinite;
+  /* position: absolute; */
+  /* white-space: nowrap; */
+   left: 100%;/* Start the text off-screen to the right */
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* cursor animation */
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #333; Background color of your screen */
+  cursor: none; /* Hide the default cursor */
+}
+
+#cursor {
+  position: fixed;
+  width: 20px; /* Smaller cursor size */
+  height: 20px;
+  background-color: rgba(255, 255, 255, 1); /* Solid white color for the cursor */
+  border-radius: 50%; /* Circle shape */
+  pointer-events: none; /* Make sure it doesn’t interfere with other elements */
+  transform: translate(-50%, -50%); /* Center the cursor */
+  box-shadow: 10 10 100px rgba(255, 255, 255, 0.7); /* Soft, glowing shadow */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+
+
+
+
+
+
 
 </style>
 
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<div id="cursor"></div>
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -128,7 +218,7 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Services</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
@@ -203,6 +293,13 @@
     </section>
 
 
+	<!-- animation line -->
+	<div class="animation-line">
+		<p>Welcome to My Portfolio | Creating Innovative Web Solutions | Let's Build Something Great Together</p>
+	  </div>
+	  
+
+
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
@@ -215,7 +312,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/About.jpg" id="prof_img"  alt="">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
@@ -304,7 +401,7 @@
 									<!-- <span class="number" data-number="30">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span> -->
 								</p>
-								<p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+								<p><a href="https://www.linkedin.com/in/muhammad-talha-yaqoob-b10269294/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
@@ -378,26 +475,27 @@
 			<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2018</span>
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Visvesvaraya Technological University</span>
+    					<span class="date">2019-2021</span>
+    					<h2>FSC PRE ENGINEERING</h2>
+    					<span class="position">READER GROUP OF COLLEGES</span>
     					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
     			</div>
 
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2012-2013</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">Army Public School</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
+    					<span class="date">2021-2025</span>
+    					<h2>BS COMPUTER SCIENCE</h2>
+    					<span class="position">
+							UNIVERSITY OF SARGODHA</span>
+    					<p class="mt-4">Present</p>
     				</div>
 				</div>
     		</div>
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="#" class="btn btn-primary py-4 px-5" id="download-cv">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -411,7 +509,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+            <p>Below are the  sample projects built with a combination of HTML, CSS, JavaScript, Bootstrap, and .NET</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -421,30 +519,30 @@
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/Muhammad-Talhayaqoob/React-Expanse-Tracker-App">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="https://github.com/Muhammad-Talhayaqoob/React-Expanse-Tracker-App">Expense_tracker app using React </a></h3>
+                <p>Crafted meticulously using HTML, CSS, and the power of React.js, this application embodies efficiency and simplicity, empowering users to effortlessly track and organize their expenditures.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              <a href="https://github.com/Muhammad-Talhayaqoob/Property-Management-System-using-oop-/blob/main/newf.cpp" class="block-20 zoom-effect" style="background-image: url('images/property.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+                <h3 class="heading"><a href="https://github.com/Muhammad-Talhayaqoob/Property-Management-System-using-oop-/blob/main/newf.cpp">Property Management system using c++</a></h3>
+                <p> A console based project built on a technological stack that includes C++ and OOP principles, the Property Management System offers a user-friendly experience for property administrators and owners alike.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="https://github.com/Muhammad-Talhayaqoob/Client-portfolio-website/blob/main/index.html" class="block-20 zoom-effect" style="background-image: url('images/portfolio.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+                <h3 class="heading"><a href="https://github.com/Muhammad-Talhayaqoob/Client-portfolio-website/blob/main/index.html">Portfolio website utilizing  html ,  css, js</a></h3>
+                <p>Showcasing expertise in HTML, CSS, and JavaScript, this portfolio features modern, responsive web designs and dynamic user interfaces.</p>
               </div>
             </div>
           </div>
@@ -454,23 +552,25 @@
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				<a href="https://github.com/Muhammad-Talhayaqoob/Netflix-Clone/blob/main/Tailwind.html/Netflix-clone.html" class="block-20 zoom-effect" style="background-image: url('images/netflix.jpg');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				  <h3 class="heading"><a href="https://github.com/Muhammad-Talhayaqoob/Netflix-Clone/blob/main/Tailwind.html/Netflix-clone.html">Netflix Clone </a></h3>
+				  <p>
+					
+					Recreated the Netflix website with precise attention to detail, featuring responsive design, dynamic UI elements, and a seamless user experience using HTML, CSS, and JavaScript.</p>
 				</div>
 			  </div>
 			</div>
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/Muhammad-Talhayaqoob/React-Expanse-Tracker-App" class="block-20 zoom-effect" style="background-image: url('images/expense_tracker.jpg');">
+				<a href="https://github.com/Muhammad-Talhayaqoob/Bank-transection-using-crud/tree/main/Bank-transection-using-crud" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/Muhammad-Talhayaqoob/React-Expanse-Tracker-App">Customer Segmentation using clustering model</a></h3>
-				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
+				  <h3 class="heading"><a href="https://github.com/Muhammad-Talhayaqoob/Bank-transection-using-crud/tree/main/Bank-transection-using-crud">Bank transection App using .Net core</a></h3>
+				  <p>Developed a .NET Core bank transaction app, enabling seamless CRUD operations for managing financial transactions. Users can easily add, view, update, and delete transactions, ensuring efficient and secure financial management.</p>
 				</div>
 			  </div>
 			</div>
@@ -478,8 +578,8 @@
 	  </div>
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
+	 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <!-- <div class="container">
 		<div class="row d-md-flex align-items-center">
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
@@ -514,16 +614,16 @@
             </div>
           </div>
         </div>
-      </div>
-	
+	</div>
+	 -->
 	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
 			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
 						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<div class="heading"> <h4>  </h4>
 						<br>
-						<p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						<p><a href="https://github.com/Muhammad-Talhayaqoob?tab=repositories" class="btn btn-primary py-3 px-5">GitHub</a></p>
 						</div>
 					</div>
 				</div>
@@ -543,14 +643,14 @@
           </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
+        <div class="row d-flex contact-info mb-5 justify-content-center">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Bengaluru, India</p>
+	            <p>Sargodha , Pakistan </p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -559,7 +659,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+ 0 101 0101 101</a></p>
+	            <p><a href="tel://0101010101">03347538831</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -568,10 +668,10 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
+	            <p><a href="mailto:info@yoursite.com">talhayaqoob059@gmail.com</a></p>
 	          </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-globe"></span>
@@ -579,7 +679,7 @@
           		<h3 class="mb-4">Download Resume</h3>
 	            <p><a href="#">resumelink</a></p>
 	          </div>
-          </div>
+          </div> -->
 
 		  <div class="container">
 			<br>
@@ -592,11 +692,12 @@
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="www.linkedin.com/in/muhammad-talha-yaqoob-b10269294"><span class="icon-linkedin"></span></a></li> 
+					  <br> 
+					  <li class="ftco-animate"><a href="https://github.com/Muhammad-Talhayaqoob"><span class="icon-github"></span></a></li>
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
+				      <!-- <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
 					</ul>
 				<br>
 		   </div>
@@ -612,8 +713,14 @@
 			<div class="col-md-12 text-center">
   
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	<!-- ©2024 [Your Name]. All rights reserved. | <a href="#top">Back to Top ↑</a> -->
+	 All rights reserved.
+	<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">
+	  Back to Top ↑
+	</button>
+
 			</div>
 		  </div>
 		</div>
@@ -638,6 +745,7 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
+  <!-- class="img-fluid rounded b-shadow-a" -->
     
   </body>
 </html>
